@@ -3,3 +3,12 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.navbar{
+    font-family: 'Bebas Neue', sans-serif;
+}
+.container{
+    margin-top: 3%;
+    font-family: 'Bebas Neue', sans-serif;
+
+}
