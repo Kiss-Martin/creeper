@@ -10,5 +10,45 @@ body{
 .container{
     margin-top: 3%;
     font-family: 'Bebas Neue', sans-serif;
+}
 
+.sziv{
+    animation: sziv 2s linear infinite alternate;
+}
+
+@keyframes sziv{
+    0% {transform: scaleX(1);}
+    50% {transform: scaleX(-1);}
+    100% {transform: scaleX(1);}
+}
+
+.gob{
+    height: 30px;
+}
+.gob:hover{
+    animation: gob 2s linear infinite;
+}
+
+@keyframes gob{
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.kepalairas{
+    background-color: green;
+    box-shadow: 1px 1px 1px 1px inset rgb(22, 184, 49);
+}
+
+.halalomon-vagyok{
+    height: 350px;
+}
+
+.dropdown-item:hover{
+    background-color: forestgreen;
+    border-radius: 10%;
+    color: white;
+    transition: 1s;
 }
