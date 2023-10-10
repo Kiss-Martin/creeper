@@ -9,8 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body class="mx-auto">
     <nav class="navbar bg-success fixed-top">
         <div class="container-fluid bg-success">
           <a class="navbar-brand bg-success" href="#">Egy Creeper Anatómiai elemzése</a>
@@ -25,25 +26,26 @@
             <div class="offcanvas-body bg-success">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active text-center" aria-current="page" href="#">Adatlap - leírás</a>
+                  <a class="nav-link active text-center" aria-current="page" href="#leiras">Adatlap - leírás</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-center" href="#">Link</a>
+                  <a class="nav-link text-center" href="#anatomia">Anatómia</a>
                 </li>
                 <li class="nav-item dropdown text-center">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Források
                   </a>
                   <ul class="dropdown-menu bg-success">
-                    <li><a class="dropdown-item" href="https://minecraft.fandom.com/wiki/Creeper">Minecraft Wikipédia</a></li>
-                    <li><a class="dropdown-item" href="https://hu.wikipedia.org/wiki/Creeper">Hivatalos Wikipédia</a></li>
+                    <li><a class="dropdown-item" target="_blank" href="https://minecraft.fandom.com/wiki/Creeper">Minecraft Wikipédia</a></li>
+                    <li><a class="dropdown-item" target="_blank" href="https://hu.wikipedia.org/wiki/Creeper">Hivatalos Wikipédia</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Képforrások</a></li>
+                    <li><a class="dropdown-item" target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Képforrások</a></li>
                   </ul>
                 </li>
               </ul>
+              <img class="takony" src="img/Slime_JE3_BE2.png" alt="" srcset="">
             </div>
           </div>
         </div>
@@ -51,14 +53,26 @@
 
       <h1>ha ezt kiveszem nem jo az oldal elosztasa</h1>
 
-      <div class="container mx-auto">
-        <div class="row">
-          <div class="card mb-3 bg-success col-5 col-sm-5" style="max-width: 540px;">
+      <div class="container">
+        <div class="row mx-auto" id="leiras">
+          <div class="bg-success card p-2 float-end col-6 col-sm-5 offset-md-1 halalomon-vagyok">
+            <h5 class="card-title text-white text-center pt-2">Rövid leírás</h5>
+            <p class="card-text p-4">A creeperek a Minecraft nevű nyílt világú sandbox videójáték kitalált lényei. Ők ellenséges mobok, amelyekkel a játékvilágban bármikor találkozhatunk, vagy olyan helyeken, ahol ilyen mobok spawnolnak. Ahelyett, hogy hagyományosan megtámadnák a játékost, a játékoshoz kúsznak és felrobbannak, elpusztítva a környező blokkokat és potenciálisan megsebezve a játékost, ha az a robbanás sugarán belül van. Zöld álcájuk és csendes viselkedésük segíti a lopakodó támadásokat. A creeperek a Minecrafthoz először a játék 2009. augusztus 31-i pre-alfa frissítésében kerültek hozzá. A creeper a Minecraft egyik legismertebb ikonjává vált. A populáris kultúrában hivatkoznak rájuk és parodizálják őket, és a Minecraft árucikkekben és reklámokban is gyakran szerepelnek.</p>
+              <h5 class="card-title text-white text-center pt-2">Történet</h5>
+              <p class="card-text p-4">A Creeper egy gyakori ellenséges csőcselék, amely csendben közeledik a játékosokhoz, majd felrobban, ami bármilyen nehézségen elpusztíthatja a blokkokat és megölheti a páncélozatlan játékosokat (kivéve a békés módban).
+              <br><br>
+              Amikor villámcsapás éri, a Creeper feltöltődött Creeper válik, amifelerősíti robbanási erejét, és lehetővé teszi a csőcselék fejénekmegszerzését piglinekből, zombikból, csontvázakból és más kúszónövényekből,amelyeket megöl.
+              <br><br>
+              Jellegzetes megjelenése és egyedi és pusztító támadási módszere miatt a kúszónövény a Minecraft egyik legikonikusabb mobjává vált, promóciós anyagokban és árukban szerepel.
+              </p>
+            </div>
+
+          <div class="card mb-3 float-end bg-success col-6 col-sm-5" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="img/Creeper_JE2_BE1.webp" class="img-fluid rounded-start p-4" alt="...">
+                <img src="img/Creeper_JE2_BE1.webp" class="img-fluid rounded-start p-4 krepper" alt="...">
                 <p class="text-center text-white pt-1 kepalairas">Szokásos</p>
-                <img src="img/Charged_Creeper_Animated.webp" class="img-fluid rounded-start p-4 mt-2" alt="...">
+                <img src="img/Charged_Creeper_Animated.webp" class="img-fluid rounded-start p-4 mt-2 krepper" alt="...">
                 <p class="text-center text-white pt-1 kepalairas">Feltöltve</p>
               </div>
               <div class="col-md-8">
@@ -92,11 +106,27 @@
               </div>
             </div>
           </div>
-
-          <div class="bg-success card p-2 float-end col-6 col-sm-5 offset-md-1 halalomon-vagyok">
-            <h5 class="card-title text-white text-center pt-2">Rövid leírás</h5>
-            <p class="card-text p-4">A creeperek a Minecraft nevű nyílt világú sandbox videójáték kitalált lényei. Ők ellenséges mobok, amelyekkel a játékvilágban bármikor találkozhatunk, vagy olyan helyeken, ahol ilyen mobok spawnolnak. Ahelyett, hogy hagyományosan megtámadnák a játékost, a játékoshoz kúsznak és felrobbannak, elpusztítva a környező blokkokat és potenciálisan megsebezve a játékost, ha az a robbanás sugarán belül van. Zöld álcájuk és csendes viselkedésük segíti a lopakodó támadásokat. A creeperek a Minecrafthoz először a játék 2009. augusztus 31-i pre-alfa frissítésében kerültek hozzá. A creeper a Minecraft egyik legismertebb ikonjává vált. A populáris kultúrában hivatkoznak rájuk és parodizálják őket, és a Minecraft árucikkekben és reklámokban is gyakran szerepelnek.</p>
+        </div>
+        <div id="anatomia" class="card text-center bg-success anatomiakartya mx-auto">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item bg-success text-white">
+                <a class="nav-link active" aria-current="true" href="#">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
           </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <img src="img/anatomiavagod.jpg" alt="">    
+        </div>
+      </div>
         </div>
       </div>
 

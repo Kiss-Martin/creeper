@@ -43,7 +43,7 @@ body{
 }
 
 .halalomon-vagyok{
-    height: 350px;
+    height: 700px;
 }
 
 .dropdown-item:hover{
@@ -52,3 +52,51 @@ body{
     color: white;
     transition: 1s;
 }
+
+.card{
+    margin: 1%;
+}
+
+.takony{
+    animation: skew 2s linear infinite;
+}
+
+@keyframes skew{
+    0% {transform: skewX(10deg);}
+    50% {transform: skewX(0deg);}
+    100% {transform: skewX(10deg);}
+}
+
+.krepper:hover{
+    background-image: url(img/bg.jpg);
+    background-position: center;
+}
+
+.krepper{
+    background-image: url(img/zöd.png);
+    transition: background-image 1s ease-out;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #158f3a;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .anatomiakartya{
+    width: 60%;
+  }
