@@ -98,5 +98,44 @@ body{
   }
 
   .anatomiakartya{
-    width: 60%;
+    width: 80%;
   }
+  .btn:active{
+    background-color: #000000;
+  }
+
+  .gradient {
+    background: linear-gradient(277deg, #0db88c, #085541, #be5917);
+    background-size: 600% 600%;
+
+    -webkit-animation: nezdmaszines 10s ease infinite;
+    -moz-animation: nezdmaszines 10s ease infinite;
+    -o-animation: nezdmaszines 10s ease infinite;
+    animation: nezdmaszines 10s ease infinite;
+}
+
+@-webkit-keyframes nezdmaszines {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes nezdmaszines {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes nezdmaszines {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes nezdmaszines {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.offcanvas-body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}

@@ -12,18 +12,18 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body class="mx-auto">
-    <nav class="navbar bg-success fixed-top">
-        <div class="container-fluid bg-success">
-          <a class="navbar-brand bg-success" href="#">Egy Creeper Anatómiai elemzése</a>
+    <nav class="navbar fixed-top gradient">
+        <div class="container-fluid gradient">
+          <a class="navbar-brand" href="#">Egy Creeper Anatómiai elemzése</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <img src="img/637436690781198305-2414826649.jpg" class="gob" alt="" srcset="">
           </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header bg-success">
+            <div class="offcanvas-header gradient">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Oldaltérkép</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body bg-success">
+            <div class="offcanvas-body gradient">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
                   <a class="nav-link active text-center" aria-current="page" href="#leiras">Adatlap - leírás</a>
@@ -109,22 +109,67 @@
         </div>
         <div id="anatomia" class="card text-center bg-success anatomiakartya mx-auto">
           <div class="card-header">
-            <ul class="nav nav-tabs card-header-tabs">
-              <li class="nav-item bg-success text-white">
-                <a class="nav-link active" aria-current="true" href="#">Active</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
+            <p class="d-inline-flex gap-4">
+              <a class="btn btn-success border-dark" data-bs-toggle="collapse" href="#1" role="button" aria-expanded="false" aria-controls="1">Szem</a>
+              <a class="btn btn-success border-dark" data-bs-toggle="collapse" href="#2" role="button" aria-expanded="false" aria-controls="2">Agy</a>
+              <a class="btn btn-success border-dark" data-bs-toggle="collapse" href="#3" role="button" aria-expanded="false" aria-controls="3">Figyelmeztető szerv</a>
+              <a class="btn btn-success border-dark" data-bs-toggle="collapse" href="#4" role="button" aria-expanded="false" aria-controls="4">Belső gyújtószerkezet</a>
+              <a class="btn btn-success border-dark" data-bs-toggle="collapse" href="#5" role="button" aria-expanded="false" aria-controls="5">Gerincvelő kanóc</a>
+              <a class="btn btn-success border-dark" data-bs-toggle="collapse" href="#6" role="button" aria-expanded="false" aria-controls="6">Minden terepre alkalmas láb</a>
+              <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="1 2 3 4 5 6">Összes bezárása / kinyitása</button>
+
+
+            </p>
+            <div class="row">
+              <div class="col-12">
+                <div class="collapse multi-collapse" id="1">
+                  <div class="card card-body bg-dark text-success">
+                    Éjjellátásra alkalmas széles periférikus látoteret biztosító látószerv.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="collapse multi-collapse" id="2">
+                  <div class="card card-body bg-dark text-success">
+                    Bár nem túl intelligens, arcok illetve objektumok felismerésére specializálódott.
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="collapse multi-collapse" id="3">
+                  <div class="card card-body bg-dark text-success">
+                    Elsősorban figyelmeztet, de a robbanás előtt mindenképpen sziszegő hangot ad le.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="collapse multi-collapse" id="4">
+                  <div class="card card-body bg-dark text-success">
+                    Homokot és puskaport tartalmaz, több köbméteres robbanásra képes.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="collapse multi-collapse" id="5">
+                  <div class="card card-body bg-dark text-success">                    
+                    Az agytól leadott robbanásra utasító jel 1.5mp alatt ér el a robbantószervhez.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="collapse multi-collapse" id="6">
+                  <div class="card card-body bg-dark text-success">
+                    Úszásra bár alkalmatlan, a szárazföldi terepeket teljes mértékben képes lefedni
+                  </div>
+                </div>
+              </div>
+              
+            </div>
           </div>
           <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <h5 class="card-title">A Creeper teljes anatómiai képe</h5>
+            <p class="card-text">A képen látható jelmagyarázatokért kattints a kártyákra</p>
             <img src="img/anatomiavagod.jpg" alt="">    
+            
         </div>
       </div>
         </div>
